@@ -1,12 +1,10 @@
 from flask import Flask, render_template, url_for, redirect, request
 from threading import Thread
 import requests
-import ssl
 from datetime import datetime
 from pytz import timezone
 import json
 
-ssl._create_default_https_context = ssl._create_unverified_context
 
 
 app = Flask('')
